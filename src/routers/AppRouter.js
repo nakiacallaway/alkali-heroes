@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import DashboardPage from "../pages/Dashboard";
 import TeamPage from "../pages/Team";
 import MemberPage from "../pages/Member";
+import FormPage from "../pages/Form"
 
 const AppRouter = () => {
     return (
@@ -12,7 +13,8 @@ const AppRouter = () => {
                 <Switch>
                     <Route path="/" exact component={DashboardPage} />
                     <Route path="/team" exact component={TeamPage} />
-                    <Route path="/team/:memberId"  component={MemberPage} /> 
+                    <Route path="/team/:memberId"  component={MemberPage} />
+                    <Route path="/form" component={FormPage} />
                 </Switch>
             </div>
         </div>
