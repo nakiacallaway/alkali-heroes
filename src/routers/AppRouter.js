@@ -1,7 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import Navbar from '../components/Navbar'
 import DashboardPage from "../pages/Dashboard";
-import MembersPage from "../pages/Member";
+import TeamPage from "../pages/Team";
 import MemberPage from "../pages/Member";
 
 const AppRouter = () => {
@@ -12,8 +12,8 @@ const AppRouter = () => {
                  {/* Switch to designate paths */ }
                 <Switch>
                     <Route path="/" exact component={DashboardPage} />
-                    <Route path="/heroes"  exact component={MembersPage} />
-                    <Route path="/heroes/:memberId"  component={MemberPage} /> 
+                    <Route path="/team" exact component={TeamPage} />
+                    <Route path="/team/:memberId"  component={MemberPage} /> 
                 </Switch>
             </div>
         </div>
