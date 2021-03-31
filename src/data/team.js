@@ -49,15 +49,15 @@ export const teamData = [
 },
 {
     id: 5, 
-    firstName: 'Harrison',
+    firstName: 'Harrsion',
     lastName: 'Stamps',
-    position: 'React Apprentice',
-    email: 'agutierrez@bitwiseindustries.com',
+    email: 'hstamps4@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/harrison-stamps-201184142/',
-    github: 'https://github.com/alexg1021',
+    github: 'https://github.com/hstamps-stack',
     bio: 'lorem ipsum',
-    profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQGXMfWZzwMopA/profile-displayphoto-shrink_400_400/0/1616791326115?e=1622678400&v=beta&t=71gHuMWAFFPfOFrFuTFr2EbBfXnhC0M2BR1cUSrxafQ',
-    languages: ['html','css', 'javascript']},
+    profile_img: 'https://ibb.co/cwz8zv9',
+    languages: ['html','css', 'javascript', 'react','react native ', 'nodeJS', 'mongoDB', 'express']
+},
 {
     id: 6,
     firstName: 'Jeffrey',
