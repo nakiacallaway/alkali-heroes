@@ -9,7 +9,7 @@ export const teamData = [
     github: 'https://github.com/alexg1021',
     bio: 'lorem ipsum',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQH7DxGvg3R3XA/profile-displayphoto-shrink_200_200/0/1536703041727?e=1622678400&v=beta&t=eKhvifwFxw7KfJn2_a2OzUXVuixmsa8JlgPqo6YjuBY',
-    languages: ['html','css', 'javascript']
+    languages: ['html','css', 'javascript', 'react']
 },
 {
     id: 2,
@@ -124,11 +124,11 @@ export const teamData = [
     firstName: 'Pravalika',
     lastName: 'Ammineni',
     position: 'React Apprentice',
-    email: 'agutierrez@bitwiseindustries.com',
+    email: 'pravallikaammineni@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/pravalika-a-12aa9b18a/',
-    github: 'https://github.com/alexg21',
+    github: 'https://github.com/pravallika89',
     bio: 'lorem ipsum',
-    profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQH7DxGvg3R3XA/profile-displayphoto-shrink_200_200/0/1536703041727?e=1622678400&v=beta&t=eKhvifwFxw7KfJn2_a2OzUXVuixmsa8JlgPqo6YjuBY',
-    languages: ['html','css', 'javascript']
+    profile_img: 'https://ca.slack-edge.com/T03A6AQRX-U01MRFW8PGA-e931aafaaa4d-512',
+    languages: ['html','css', 'javascript', 'react']
 }
 ]
