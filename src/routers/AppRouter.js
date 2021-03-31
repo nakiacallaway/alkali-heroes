@@ -9,7 +9,6 @@ const AppRouter = () => {
         <div>
             <Navbar />
             <div className="container">
-                 {/* Switch to designate paths */ }
                 <Switch>
                     <Route path="/" exact component={DashboardPage} />
                     <Route path="/team" exact component={TeamPage} />
