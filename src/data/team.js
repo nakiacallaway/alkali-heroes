@@ -51,6 +51,7 @@ export const teamData = [
     id: 5, 
     firstName: 'Harrsion',
     lastName: 'Stamps',
+    position: 'React Apprentice',
     email: 'hstamps4@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/harrison-stamps-201184142/',
     github: 'https://github.com/hstamps-stack',
@@ -125,7 +126,7 @@ export const teamData = [
     position: 'React Apprentice',
     email: 'agutierrez@bitwiseindustries.com',
     linkedIn: 'https://www.linkedin.com/in/pravalika-a-12aa9b18a/',
-    github: 'https://github.com/alexg1021',
+    github: 'https://github.com/alexg21',
     bio: 'lorem ipsum',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQH7DxGvg3R3XA/profile-displayphoto-shrink_200_200/0/1536703041727?e=1622678400&v=beta&t=eKhvifwFxw7KfJn2_a2OzUXVuixmsa8JlgPqo6YjuBY',
     languages: ['html','css', 'javascript']
