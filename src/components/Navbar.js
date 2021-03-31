@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
       <nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
         <a className='navbar-brand' href='#'>
-          Tour of Heroes
+          Team Alkali
         </a>
         <button
           className='navbar-toggler'
