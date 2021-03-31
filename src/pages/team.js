@@ -24,7 +24,7 @@ const TeamPage = () => {
   
   return (
     <div id="team">
-      <div className="row text-center mt-3">
+      <div className="row text-center">
         <div className="col">
           <h2>Welcome to Team Alkali!</h2>
         </div>
