@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MemberCard from '../components/team';
+import MemberCard from '../components/MemberCard';
 import { teamData } from '../data/team';
 
 const TeamPage = () => {
