@@ -1,7 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import Navbar from '../components/Navbar'
 import DashboardPage from "../pages/Dashboard";
-import TeamPage from "../pages/team";
+import TeamPage from "../pages/Team";
 // import MemberPage from "../pages/Member";
 // import FormPage from "../pages/Form"
 import 'bootstrap/dist/css/bootstrap.css';
