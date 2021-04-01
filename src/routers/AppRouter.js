@@ -4,6 +4,7 @@ import DashboardPage from "../pages/Dashboard";
 import TeamPage from "../pages/Team";
 import MemberPage from "../pages/Member";
 import FormPage from "../pages/Form"
+import 'bootstrap/dist/css/bootstrap.css';
 
 const AppRouter = () => {
     return (
@@ -14,8 +15,7 @@ const AppRouter = () => {
                     <Route path="/" exact component={DashboardPage} />
                     <Route path="/team" exact component={TeamPage} />
                     <Route path="/team/:memberId"  component={MemberPage} />
-                    <Route path="/form" component={FormPage} />
-                </Switch>
+                    <Route path="/form" component={FormPage} />                </Switch>
             </div>
         </div>
     );
