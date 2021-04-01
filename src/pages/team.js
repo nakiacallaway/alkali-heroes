@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MemberCard from '../components/team';
+// import MemberCard from '../components/team';
 import { teamData } from '../data/team';
 
 const TeamPage = () => {
@@ -49,7 +49,7 @@ const TeamPage = () => {
       {team.map((member, index) => {
         return (
           <div className='col-3'>
-          <MemberCard member={member} />
+          {/* <MemberCard member={member} /> */}
           </div>
         );
         })};

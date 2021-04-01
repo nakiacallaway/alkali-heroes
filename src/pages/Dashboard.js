@@ -4,39 +4,46 @@ import { teamData } from '../data/team';
 import '../App.css';
 
 const DashboardPage = () => {
-    const [team, setTeam] = useState([]);
-    // console.log(heroData);
-  
-    //useEffect hook to render and hold filtered data
-    useEffect(() => { //renders upon page load
-      let featured = teamData[Math.floor(Math.random()*teamData.length)];
-      console.log(featured);
-      setTeam(featured);
-    }, []);  //second param defines conditions in which it can render again (Line 8)
+  let spotlight = teamData[Math.floor(Math.random()*teamData.length)];
+    // console.log(spotlight);
+    // console.log(spotlight.languages)
 
     return (
-        <div id='dashboard-page'>
-          <div className='row text-center'>
-            <div className='col'>
-              <h1 className='my-5'>This is Team Alkali!</h1>
-              <h3 className='text-secondary my-3'>Who Are We?</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique perferendis mollitia distinctio, illum aperiam adipisci tempore corrupti placeat provident, odio officiis necessitatibus pariatur exercitationem ex. Vel, dolores quam. Aut, explicabo illo tempore illum debitis sunt, nesciunt aspernatur placeat iure rerum quo in officia quos laborum dolorem! Explicabo deserunt nulla mollitia totam alias, porro architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique perferendis mollitia distinctio, illum aperiam adipisci tempore corrupti placeat provident, odio officiis necessitatibus pariatur exercitationem ex. Vel, dolores quam. Aut, explicabo illo tempore illum debitis sunt, nesciunt aspernatur placeat iure rerum quo in officia quos laborum dolorem!</p>
-              <h3 className='mt-5 mb-4'>Member Spotlight</h3>
-            </div>
-          </div>
-          <div className='row'>
-            {teamData.map((member, index) => {
-              return (
-                <div className='col-sm-12 d-flex justify-content-center' key={member.id}>
-                  <p>Team Member</p>
-                  {/* <MemberCard member={member} updateFeatured={updateFeatured} /> */}
-                </div>
-              );
-            })}
+      <div id='dashboard-page'>
+        <div className='row text-center'>
+          <div className='col'>
+            <h1 className='my-5'>This is Team Alkali!</h1>
+            <h3 className='text-secondary my-3'>Who Are We?</h3>
+            <p>When I was little, I would go on Nickelodeon.com all the time and they had this game similar to Club Penguin, except it was called Nicktropolis. And if you forgot your password, a security question you could choose was “What is your eye color?” and if you got it right it’d tell you your password. So I would go to popular locations in Nicktropolis and write down random usernames who were also in those areas, and then I would log out and type in the username as if it were my own and see which of these usernames had a security question set to “What is your eye color?” (Which was most of them, since it was easy and we were all kids). I would then try either brown, blue, or green, and always get in, then I would go to their house and send all of their furniture and decorations to my own accounts. And if I didn’t want it, I could sell it for money.</p>
+            <h3 className='mt-5'>Member Spotlight</h3>
           </div>
         </div>
+        <div className='row my-4'>
+          <div className="col-md-6 offset-md-3">
+              <div id="member">
+                <div className="col">
+                  {/* {card start} */}
+                  <div class="card card border-primary">
+                    <img 
+                      className="th-img-container"
+                      src={spotlight.profile_img} 
+                      alt={spotlight.lastName} />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">{spotlight.firstName} {spotlight.lastName}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{spotlight.position}</h6>
+                      <p class="card-text">{spotlight.bio}</p>
+                      <a href={spotlight.linkedIn} class="card-link text-info">Connect</a>
+                      <a href={spotlight.github} class="card-link text-info">Github</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
       );
-    };
+};
     
 
 export default DashboardPage;
