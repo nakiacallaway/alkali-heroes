@@ -11,7 +11,7 @@ const MemberCard = ({member}) => {
                   
                 <div className="my-2 d-flex justify-content-between">
                   <Link to={`/pages/${member.id}`} className="card-link">View Details</Link>
-                  <a href={$member.linkedin} className='card-link' >Linkedin Profile</a>
+                  <a href={member.linkedin} className='card-link' >Linkedin Profile</a>
                 </div>
           </div>
     </div>
