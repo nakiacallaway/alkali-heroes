@@ -37,7 +37,7 @@ const MemberPage = () => {
   }, 2000)
 }
     return (
-      <div id='hero' className='text-center'>
+      <div id='member' className='text-center'>
         <div className='row mt-4'> 
           <div className='col'>
           <div className='card'>
