@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-
-// import MemberCard from '../components/team';
-
-import { teamData } from '../data/team';
+import MemberCard from '../components/MemberCard';
+import teamData from '../data/team';
 
 const TeamPage = () => {
   const [team, setTeam] = useState([]);
@@ -52,7 +50,7 @@ const TeamPage = () => {
         return (
           <div className='col-3'>
 
-          {/* <MemberCard member={member} /> */}
+          <MemberCard member={member} />
 
           </div>
         );

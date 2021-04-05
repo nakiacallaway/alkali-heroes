@@ -20,12 +20,12 @@ const MemberPage = () => {
   const [alert, setAlert] = useState(false);
 
   useEffect(() => {
-      let foundMember = teamData.find(h => m.id === +memberId);
+      let foundMember = teamData.find(m => m.id === +memberId);
       setMember(foundMember);
   }, [member]);
 
   const updateFeatured = (individualId) => {
-    let foundMember = teamData.find(s => s.id === +individualId);
+    let foundMember = teamData.find(m => m.id === +individualId);
     foundMember.featured = !foundMember.featured;
     showAlert();
   }
