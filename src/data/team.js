@@ -132,3 +132,5 @@ export const teamData = [
     languages: ['html','css', 'javascript', 'react']
 }
 ]
+
+export default teamData;
