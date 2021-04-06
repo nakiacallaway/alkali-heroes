@@ -54,7 +54,7 @@ const TeamPage = () => {
 
           </div>
         );
-        })};
+        })}
       </div>
     </div>
   );
