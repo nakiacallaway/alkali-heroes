@@ -2,22 +2,6 @@ import {useEffect, useState} from 'react';
 import {teamData} from '../data/team';
 import {useParams} from 'react-router-dom';
 
-const langs = [
-  'HTML',
-  'CSS',
-  'Javascript',
-  'React',
-  'React-Native',
-  'NodeJS',
-  'Java',
-  'Python',
-  'MongoDB', 
-  'C++',
-  'Express',
-  'Oz',
-  'Haskell',
-];
-
 const MemberPage = () => {
   let {memberId} = useParams();
   const [member, setMember] = useState({
@@ -29,7 +13,7 @@ const MemberPage = () => {
     github: '',
     bio: '',
     profile_img: '',
-    languages: ''
+    languages: []
   });
 
   useEffect(() => {
@@ -49,38 +33,33 @@ const MemberPage = () => {
           <div className='mem-card-bg-img' src={member.profile_img} style={{'backgroundImage': `url(${member.profile_img})`}}></div>
             </div>
           <div className='col-md-7 text-center th-card-body'>
-            <div className='th-card-header d-flex justify-content-between'> 
-     
-            <h3>{member.firstName} {member.lastName}</h3> <br/>
-            
-            <h3>{member.position}</h3>
+            <div className='th-card-header d-flex justify-content-center my-3'> 
+              <h1>{member.firstName} {member.lastName}</h1> 
             </div>
             
             <div className='th-card-details'> 
- 
-            <div className='details'>
-            <h2 className='text-secondary'>About</h2>
+              <h3>{member.position}</h3>
+            <div className='details my-3'>
+            <h4 className='text-secondary'>About</h4>
             <p className='hero-about'>{member.bio}</p>
             </div>
 
             <div className='detail'>
-                      <h4 className='text-secondary'>Langs</h4>
-                      <p className='ml-5'>
-                        {teamData.languages?.map((langs, i) => {
+                      <h4 className='text-secondary'>Languages:</h4>
+                      <p className='my-2'>
+                        {member.languages?.map((langs, i) => {
                           return (
-                            <span
-                              className='badge badge-pill badge-primary my-1'
-                              key={i}>
-                              {langs}
-                            </span>
-                          );
-                        })}
+                            <span className='badge badge-pill badge-primary my-1' key={i}> <h5 className='my-1'> {langs} </h5></span>
+                        )})}
                       </p>
                     </div>
 
             <div className='detail'>
-            <h2 className='text-secondary'>Portfolio:</h2>
-            <p>{member.github}</p>
+            <h4 className='text-secondary'>Contact:</h4>
+            <a href={member.linkedin} className='card-link' >Linkedin Profile</a>
+            <a href={member.email} className='card-link' >Email</a>
+            <a href={member.github} className='card-link' >Github Portfolio</a>
+
 
             </div>
             </div>
