@@ -47,3 +47,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.mem-card-bg-img {
+  height: 460px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 60%;
+}

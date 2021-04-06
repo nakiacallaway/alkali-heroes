@@ -3,11 +3,11 @@ export const teamData = [
     id: 1,
     firstName: 'Alex',
     lastName: 'Gutierrez',
-    position: 'React Apprenticeship Lead',
+    position: 'React Lead',
     email: 'agutierrez@bitwiseindustries.com',
     linkedIn: 'https://www.linkedin.com/in/alex-gutierrez-mpa-6ba8bb34/',
     github: 'https://github.com/alexg1021',
-    bio: 'lorem ipsum',
+    bio: 'I like to coach soccer, developing the React team.  One day I would like to travel to Italy.',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQH7DxGvg3R3XA/profile-displayphoto-shrink_200_200/0/1536703041727?e=1622678400&v=beta&t=eKhvifwFxw7KfJn2_a2OzUXVuixmsa8JlgPqo6YjuBY',
     languages: ['html','css', 'javascript', 'react']
 },
@@ -19,7 +19,7 @@ export const teamData = [
     email: 'annamariej1015@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/annamarie-jimenez-231b79182/',
     github: 'https://github.com/annamariej1015',
-    bio: 'lorem ipsum',
+    bio: 'Currently I am a nurse, someday I would like to learn to fly a plane.',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQEH3UH2jdXzdQ/profile-displayphoto-shrink_400_400/0/1611110839376?e=1622678400&v=beta&t=zOKhMYmgPrDbPa4bZOIrHyp2S4Y-1uRTIgFwNmA1tgs',
     languages: ['html', 'css', 'javascript', 'react', 'react native', 'nodeJS', 'mongoDB', 'express']
 }, 
@@ -43,7 +43,7 @@ export const teamData = [
     email: 'hello.xyeras@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/elizabeth-agnes-gaw-6702a7139/',
     github: 'https://github.com/xyeras',
-    bio: 'lorem ipsum',
+    bio: 'For now my hobbies include being the Eliza-best teammate and coming up with great nicknames for myself.  My ultimate goal is to become a cat lady.',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQF0ROaUm_EXWw/profile-displayphoto-shrink_400_400/0/1611397157383?e=1622678400&v=beta&t=ajryz6YmZznohK-PD6Ltq63ExXHWUwm7wY54oqyO2BA',
     languages: ['html','css', 'javascript', 'react', 'python', 'haskell', 'oz', 'c++']
 },
@@ -55,7 +55,7 @@ export const teamData = [
     email: 'hstamps4@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/harrison-stamps-201184142/',
     github: 'https://github.com/hstamps-stack',
-    bio: 'lorem ipsum',
+    bio: 'I like to cruize on the weekends.',
     profile_img: 'https:media-exp1.licdn.com/dms/image/C5603AQGXMfWZzwMopA/profile-displayphoto-shrink_200_200/0/1616791326115?e=1622678400&v=beta&t=NfnQ4TAUTfkEIsA2gt_HBsv_wOLJ22NAfYDW4zDhsUc' ,
     languages: ['html','css', 'javascript', 'react','react native ', 'nodeJS', 'mongoDB', 'express']
 },
@@ -67,7 +67,7 @@ export const teamData = [
     email: 'jeffriosjr@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/jeffrey-rios-a113a949/',
     github: 'https://github.com/jeffreyriosjr',
-    bio: 'lorem ipsum',
+    bio: 'I would like to learn to scuba dive.',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQE-EURX3_t5DA/profile-displayphoto-shrink_200_200/0/1616453773735?e=1622678400&v=beta&t=BA_m1wLet2-8HhMFEkl9v5I5I1rCpMAP1G2_H3CpMgY',
     languages: ['html','css', 'javascript', 'react']
 },   
