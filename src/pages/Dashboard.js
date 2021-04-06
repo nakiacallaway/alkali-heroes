@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-// import MemberCard from '../components/MemberCard';
 import { teamData } from '../data/team';
 import '../App.css';
 

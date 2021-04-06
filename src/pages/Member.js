@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import {teamData} from '../data/team';
 import {useParams} from 'react-router-dom';
-import {FaStar, FaRegStar} from 'react-icons/fa';
+// import {FaStar, FaRegStar} from 'react-icons/fa';
 
 const MemberPage = () => {
   let {memberId} = useParams();
@@ -48,11 +48,11 @@ const MemberPage = () => {
             </div>
           <div className='col-md-7 text-center th-card-body'>
             <div className='th-card-header d-flex justify-content-between'> 
-            <span>
+            {/* <span>
               <a href='javascript:void(0)' onClick={() => updateFeatured(member.id)}>
               {member.featured ? <FaStar /> : <FaRegStar />}
               </a>
-            </span>
+            </span> */}
             <span>{member.firstName}</span>
             </div>
             <div className='th-card-name my-3'> 
