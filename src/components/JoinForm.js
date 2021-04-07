@@ -4,22 +4,37 @@ import '../App.css';
 
 const JoinForm = () =>{
         const [alert, setAlert] = useState(false); //sets alert state
+        const [newMember, setNewMember] = useState({ // define a STATE here to keep track of input from the user
+            id:'',
+            firstName:'',
+            lastName:'',
+            email:'',
+            linkedIn:'',
+            github:'',
+            bio:'',
+            profile_img:'',
+            languages:[],             
+        });    
 
-        const handleSubmit = event => {
-            event.preventDefault();
-            console.log('submit runs!');
-            setAlert(true);
-            setTimeout(() => {
-                setAlert(false);             
-            }, 2000) 
-            // saveMovie();
-        };
+
+        console.log(newMember);
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        console.log('submit runs!');
+        setAlert(true);
+        setTimeout(() => {
+            setAlert(false);             
+        }, 2000) 
+        // saveMovie();
+    };
 
     return(
         <div className="row my-5">
             <div className="col col-md-10 offset-1">
+                {/* //conditional for alert functionality */}
                 {  alert ? (
-                    <div className="alert alert-success mb-5" role="alert"> {/* //conditional for alert functionality */}
+                    <div className="alert alert-success mb-5" role="alert"> 
                         A member has been added. Welcome to the team!
                     </div> 
                 ) : (
@@ -33,15 +48,16 @@ const JoinForm = () =>{
                 id='join-form' 
                 onSubmit={handleSubmit}
                 >
-                    <div className="row">
+                    {/* inputs start */}
+                    <div className="row"> 
                         <div id="first" className="form-group col col-md-6">
                             <label htmlFor="firstname">First Name</label>
                             <input 
                                 type="text" 
                                 id="firstname" 
                                 className="form-control" 
-                                value=""
-                                onChange=""
+                                value={newMember.firstName}
+                                onChange={event => setNewMember(event.target.value)}
                                 placeholder="First"/>
                         </div>
                         <div id="last" className="form-group col col-md-6">
@@ -50,8 +66,8 @@ const JoinForm = () =>{
                                 type="text" 
                                 id="lastname" 
                                 className="form-control" 
-                                value=""
-                                onChange=""
+                                value={newMember.lastName}
+                                onChange={event => setNewMember(event.target.value)}
                                 placeholder="Last"
                             />
                     </div>   
@@ -62,8 +78,8 @@ const JoinForm = () =>{
                                 type="email" 
                                 id="email" 
                                 className="form-control" 
-                                value=""
-                                onChange=""
+                                value={newMember.email}
+                                onChange={event => setNewMember(event.target.value)}
                                 placeholder="NewMember@Alkali.com"
                             />                    
                     </div>
@@ -143,8 +159,8 @@ const JoinForm = () =>{
                         <textarea 
                             id="bio"
                             className="form-control"
-                            value=""
-                            onchange=""
+                            value={newMember.bio}
+                            onChange={event => setNewMember(event.target.value)}
                             placeholder="Tell us a little bit about yourself"
                         />
                     </div>
@@ -155,8 +171,8 @@ const JoinForm = () =>{
                                 type="text" 
                                 id="github" 
                                 className="form-control" 
-                                value=""
-                                onChange=""
+                                value={newMember.github}
+                                onChange={event => setNewMember(event.target.value)}
                                 placeholder="https://github.com/username"
                             />
                         </div>
@@ -166,8 +182,8 @@ const JoinForm = () =>{
                                 type="text" 
                                 id="linkedin" 
                                 className="form-control" 
-                                value=""
-                                onChange=""
+                                value={newMember.linkedIn}
+                                onChange={event => setNewMember(event.target.value)}
                                 placeholder="https://www.linkedin.com/in/username-1234abc/"
                             />
                         </div>
@@ -178,8 +194,8 @@ const JoinForm = () =>{
                             type="text" 
                             id="profile_img" 
                             className="form-control" 
-                            value=""
-                            onChange=""
+                            value={newMember.profile_img}
+                            onChange={event => setNewMember(event.target.value)}
                             placeholder="Place a direct link to your desired profile picture"
                         />
                     </div>
