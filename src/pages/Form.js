@@ -11,7 +11,7 @@ const FormPage = () =>{
             <div className="row text-center">
                 <div className="col mt-5">
                     <h2>Join The Team</h2>
-                    <h4 className="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere voluptas facilis ab culpa?</h4>
+                    <h4 className="text-secondary">We’re always on the lookout for awesome people to join Team Alkali.<br></br>To send us your info fill out the form below.  </h4>
                 </div>
             </div>
             <div className="row">
