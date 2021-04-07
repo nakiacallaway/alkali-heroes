@@ -54,3 +54,11 @@
   background-position: center;
   border-radius: 60%;
 }
+
+.jl-card-bg-img {
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}

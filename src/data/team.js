@@ -127,7 +127,7 @@ export const teamData = [
     email: 'pravallikaammineni@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/pravalika-a-12aa9b18a/',
     github: 'https://github.com/pravallika89',
-    bio: 'lorem ipsum',
+    bio: 'I enjoy spending time with my daughter who is starting preschool soon.',
     profile_img: 'https://ca.slack-edge.com/T03A6AQRX-U01MRFW8PGA-e931aafaaa4d-512',
     languages: ['html','css', 'javascript', 'react']
 }

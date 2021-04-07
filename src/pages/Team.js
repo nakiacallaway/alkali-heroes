@@ -31,15 +31,6 @@ const TeamPage = () => {
       </div>
       <div className='row'>
         <div className="col">
-          { alert ? (
-          <div className='alert alert-success text-center' role='alert'>
-            Task Finished!
-          </div> ) : (<div></div>)
-          }
-          </div>
-        </div>
-      <div className='row'>
-        <div className="col">
           <div className="form-group">
             <input type='text' id='member-search' className="form-control" placeholder='Find a member' value={searchTerm} onChange={handleChange} />
           </div>

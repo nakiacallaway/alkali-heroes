@@ -1,6 +1,8 @@
 import {useEffect, useState} from 'react';
 import {teamData} from '../data/team';
+import JumpLinks from '../components/Jumplinks';
 import {useParams} from 'react-router-dom';
+
 
 const MemberPage = () => {
   let {memberId} = useParams();
@@ -24,6 +26,8 @@ const MemberPage = () => {
 
 
     return (
+
+
 <div id='member' className='text-center'>
         <div className='row mt-4'> 
           <div className='col'>
@@ -70,12 +74,31 @@ const MemberPage = () => {
          </div>
         </div>
         
-        
+        <div className="container">
+  <div className="row mt-5">
+    <div className="col">
+    
+    </div>
+  </div>
+</div>
+<div className='row mt-5'>
+      {teamData.map((member, index) => {
+        return (
+          <div className='col-1'>
+
+          <JumpLinks member={member} />
+
+          </div>
+        );
+        })}
+      </div>
         </div>
         
         
         
   );
 };
+
+
 
 export default MemberPage;
