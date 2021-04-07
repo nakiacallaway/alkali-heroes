@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import {teamData} from '../data/team';
+import MemberCard from '../components/MemberCard';
 import {useParams} from 'react-router-dom';
 
 const MemberPage = () => {
@@ -70,12 +71,31 @@ const MemberPage = () => {
          </div>
         </div>
         
-        
+        <div className="container">
+  <div className="row">
+    <div className="col-2">
+    
+    </div>
+  </div>
+</div>
+<div className='row'>
+      {teamData.map((member, index) => {
+        return (
+          <div className='col-2'>
+
+          <MemberCard member={member} />
+
+          </div>
+        );
+        })}
+      </div>    
         </div>
         
         
         
   );
 };
+
+
 
 export default MemberPage;
