@@ -56,10 +56,9 @@
 }
 
 .jl-card-bg-img {
-  height: 100px;
-  size: 25%;
+  height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 60%;
+  border-radius: 15px;
 }

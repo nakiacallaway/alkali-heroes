@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 const JumpLink = ({member}) => {
     return (
-    <div className="card mb-3">
-        <div className='jl-card-bg-img' src={member.profile_img} style={{'backgroundImage': `url(${member.profile_img})`}}></div> 
-                
+    <div className="card mt-3">
+        <Link to={`/member/${member.id}`} className="card-link"><div className='jl-card-bg-img' src={member.profile_img} style={{'backgroundImage': `url(${member.profile_img})`}}></div></Link>
+        
     </div>
     );
 };
