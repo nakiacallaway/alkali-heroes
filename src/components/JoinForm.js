@@ -134,10 +134,6 @@ const JoinForm = () =>{
                             <label class="form-check-label" for="mongodb">MongoDB</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="react" value="option1"/>
-                            <label class="form-check-label" for="react">React</label>
-                        </div>
-                        <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" name="languages" id="c++" value="option2"/>
                             <label class="form-check-label" for="c++">C++</label>
                         </div>
