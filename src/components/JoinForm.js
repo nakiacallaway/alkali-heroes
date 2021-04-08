@@ -16,18 +16,14 @@ const JoinForm = () =>{
         languages:[],             
     });    
 
-    
-
-    const addMember = () => {
-       
+    const addMember = () => {//function to push member into array
         newMember.id = teamData.length + 1;
         teamData.push(newMember);
         console.log(newMember);
-    }; //function to push member into array
+    }; 
 
     const handleSubmit = event => {
         event.preventDefault();
-
         console.log('submit runs!');
         setAlert(true);
         setTimeout(() => {
@@ -38,8 +34,8 @@ const JoinForm = () =>{
     };
 
     return(
-        <div className="row my-5">
-            <div className="col col-md-6 offset-3">
+        <div className="container">
+            <div className="col col-md-10 offset-1">
                 {/* //conditional for alert functionality */}
                 {  alert ? (
                     <div className="alert alert-success mb-5" role="alert"> 
@@ -51,14 +47,14 @@ const JoinForm = () =>{
             </div> 
             <div className="row">          
                 <form 
-                action='submit'
-                className="col-md-10 offset-1 "
-                id='join-form' 
-                onSubmit={handleSubmit}
+                    action='submit'
+                    className="col-md-10 offset-1 "
+                    id='join-form' 
+                    onSubmit={handleSubmit}
                 >
                     {/* inputs start */}
-                    <div className="row"> 
-                        <div id="first" className="form-group offset-3">
+                    <div className="form-row"> 
+                        <div id="first" className="form-group col col-md-6">
                             <label htmlFor="firstname">First Name</label>
                             <input 
                                 type="text" 
@@ -68,7 +64,7 @@ const JoinForm = () =>{
                                 onChange={event => setNewMember({...newMember, firstName:event.target.value})}
                                 placeholder="First"/>
                         </div>
-                        <div id="last" className="form-group offset-1 ">
+                        <div id="last" className="form-group col col-md-6">
                             <label htmlFor="lastname">Last Name</label>
                             <input
                                 type="text" 
@@ -78,9 +74,9 @@ const JoinForm = () =>{
                                 onChange={event => setNewMember({...newMember, lastName:event.target.value})}
                                 placeholder="Last"
                             />
-                    </div>   
+                        </div>   
                     </div>             
-                    <div id="e_mail" className="form-group offset-3">
+                    <div id="e_mail" className="form-group">
                         <label htmlFor="email">E-mail</label>
                             <input 
                                 type="email" 
@@ -91,7 +87,7 @@ const JoinForm = () =>{
                                 placeholder="NewMember@Alkali.com"
                             />                    
                     </div>
-                    <div id="station" className="form-group offset-3">
+                    <div id="station" className="form-group">
                         <label htmlFor="position">Position</label>
                         <select 
                             className="form-control" 
@@ -102,13 +98,13 @@ const JoinForm = () =>{
                                 <option>React Lead</option>
                         </select>
                     </div>
-                    <div id="skills" className="form-group offset-3 mt-3">
+                    <div id="skills" className="form-group">
                         <div>
                             <label htmlFor="skills">Languages</label>                        
                         </div>
                         <textarea 
                             id="languages"
-                            className="form-control"
+                            className="form-control col"
                             value={newMember.languages}
                             onChange={event => setNewMember({...newMember, languages:event.target.value.split(',')})}
                             placeholder="What coding languages do you know?"
@@ -116,7 +112,7 @@ const JoinForm = () =>{
 
                         </div>
                        
-                    <div id="info" className="form-group offset-3">
+                    <div id="info" className="form-group">
                         <label htmlFor="bio">About</label>
                         <textarea 
                             id="bio"
@@ -126,8 +122,8 @@ const JoinForm = () =>{
                             placeholder="Tell us a little bit about yourself"
                         />
                     </div>
-                    <div className="row">
-                        <div id="github_acct" className="form-group offset-3 col-md-6">
+                    <div className="form-row">
+                        <div id="github_acct" className="form-group col col-md-6">
                             <label htmlFor="github">Github</label>
                             <input
                                 type="text" 
@@ -138,7 +134,7 @@ const JoinForm = () =>{
                                 placeholder="https://github.com/username"
                             />
                         </div>
-                        <div id="linkedin_acct" className="form-group offset-3 col-md-6">
+                        <div id="linkedin_acct" className="form-group col col-md-6">
                             <label htmlFor="linkedin">LinkedIn</label>
                             <input
                                 type="text" 
@@ -150,7 +146,7 @@ const JoinForm = () =>{
                             />
                         </div>
                     </div>
-                    <div id="image" className="form-group offset-3">
+                    <div id="image" className="form-group">
                         <label htmlFor="profile_img">Profile Picture</label>
                         <input
                             type="text" 
@@ -161,7 +157,7 @@ const JoinForm = () =>{
                             placeholder="Place a direct link to your desired profile picture"
                         />
                     </div>
-                    <button type="submit" class="btn btn-info col-4 offset-6 mt-3" onClick="">Submit</button>
+                    <button type="submit" class="btn btn-info col" onClick="">Submit</button>
                 </form>            
             </div>
         </div>
