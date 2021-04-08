@@ -31,7 +31,7 @@ export const teamData = [
     email:'bcavazos@alphaworks.tech',
     linkedIn:'https://www.linkedin.com/in/brittney-cavazos-83b056a9/',
     github:'https://github.com/b-cavazos',
-    bio:'lorem ipsum',
+    bio:'A Graphic Designer making her way into tech.',
     profile_img:'https://media-exp1.licdn.com/dms/image/C5603AQHRFP4gIJp58g/profile-displayphoto-shrink_800_800/0/1578492310711?e=1622678400&v=beta&t=0HRaphHlpZn0giNFr799ZJyqimnglvrWnmKaKM-E9aM',
     languages:['html','css','javascript', 'react']
 }, 
@@ -91,7 +91,7 @@ export const teamData = [
     email:'merhawitgubsa@gmail.com',
     linkedIn:'https://www.linkedin.com/in/merhawit-gubsa/',
     github:'https://github.com/meru20',
-    bio:'lorem ipsum',
+    bio:'I like spending time with my friends and catching up with family. This isn\'t my first rodeo!',
     profile_img:'https://media-exp1.licdn.com/dms/image/C5603AQG-X6R81-W7wA/profile-displayphoto-shrink_800_800/0/1617224479322?e=1622678400&v=beta&t=rEP8dIh2J41XRE3KZtUqb8d954YybPS3OCukwZEu1C4',
     languages:['html','css','react','javascript','java']
 },
@@ -115,7 +115,7 @@ export const teamData = [
     email: 'pradeepsanghera@gmail.com',
     linkedIn: 'linkedin.com/in/pardeep-sanghera-993b8a209',
     github: 'https://github.com/Pardeepsanghera',
-    bio: 'lorem ipsum',
+    bio: 'I enjoy watching sports and movies. People like to Party With Pardeep',
     profile_img: 'https://media-exp1.licdn.com/dms/image/C4E03AQHyFKY2L-h3Xw/profile-displayphoto-shrink_200_200/0/1616519627952?e=1622678400&v=beta&t=q4gfJZVfvc9jqMy0gBYYZSxfXf1otB7hyQ3J-Pgb31I',
     languages: ['html','css', 'javascript', 'react']
 },
