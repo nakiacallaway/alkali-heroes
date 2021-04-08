@@ -25,14 +25,14 @@ const TeamPage = () => {
   return (
     <div id="team">
       <div className="row text-center">
-        <div className="col">
+        <div className="col my-5">
           <h2>Welcome to Team Alkali!</h2>
         </div>
       </div>
       <div className='row'>
         <div className="col">
-          <div className="form-group">
-            <input type='text' id='member-search' className="form-control" placeholder='Find a member' value={searchTerm} onChange={handleChange} />
+          <div className="form-group mb-4">
+            <input type='text' id='member-search' className="form-control border-info" placeholder='Find a member' value={searchTerm} onChange={handleChange} />
           </div>
         </div>
       </div>
