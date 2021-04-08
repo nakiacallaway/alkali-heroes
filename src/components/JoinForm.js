@@ -55,7 +55,7 @@ const JoinForm = () =>{
                 >
                     {/* inputs start */}
                     <div className="row"> 
-                        <div id="first" className="form-group col col-md-6">
+                        <div id="first" className="form-group offset-3">
                             <label htmlFor="firstname">First Name</label>
                             <input 
                                 type="text" 
@@ -65,7 +65,7 @@ const JoinForm = () =>{
                                 onChange={event => setNewMember(event.target.value)}
                                 placeholder="First"/>
                         </div>
-                        <div id="last" className="form-group col col-md-6">
+                        <div id="last" className="form-group offset-1 ">
                             <label htmlFor="lastname">Last Name</label>
                             <input
                                 type="text" 
@@ -77,7 +77,7 @@ const JoinForm = () =>{
                             />
                     </div>   
                     </div>             
-                    <div id="e_mail" className="form-group">
+                    <div id="e_mail" className="form-group offset-3">
                         <label htmlFor="email">E-mail</label>
                             <input 
                                 type="email" 
@@ -88,7 +88,7 @@ const JoinForm = () =>{
                                 placeholder="NewMember@Alkali.com"
                             />                    
                     </div>
-                    <div id="station" className="form-group">
+                    <div id="station" className="form-group offset-3">
                         <label htmlFor="position">Position</label>
                         <select 
                             className="form-control" 
@@ -99,7 +99,7 @@ const JoinForm = () =>{
                                 <option>React Lead</option>
                         </select>
                     </div>
-                    <div id="skills" className="form-group mt-3">
+                    <div id="skills" className="form-group offset-3 mt-3">
                         <div>
                             <label htmlFor="skills">Languages</label>                        
                         </div>
@@ -156,7 +156,7 @@ const JoinForm = () =>{
                             <label class="form-check-label" for="haskell">Haskell</label>
                         </div>
                     </div>
-                    <div id="info" className="form-group">
+                    <div id="info" className="form-group offset-3">
                         <label htmlFor="bio">About</label>
                         <textarea 
                             id="bio"
@@ -167,7 +167,7 @@ const JoinForm = () =>{
                         />
                     </div>
                     <div className="row">
-                        <div id="github_acct" className="form-group col-md-6">
+                        <div id="github_acct" className="form-group offset-3 col-md-6">
                             <label htmlFor="github">Github</label>
                             <input
                                 type="text" 
@@ -178,7 +178,7 @@ const JoinForm = () =>{
                                 placeholder="https://github.com/username"
                             />
                         </div>
-                        <div id="linkedin_acct" className="form-group col-md-6">
+                        <div id="linkedin_acct" className="form-group offset-3 col-md-6">
                             <label htmlFor="linkedin">LinkedIn</label>
                             <input
                                 type="text" 
@@ -190,7 +190,7 @@ const JoinForm = () =>{
                             />
                         </div>
                     </div>
-                    <div id="image" className="form-group">
+                    <div id="image" className="form-group offset-3">
                         <label htmlFor="profile_img">Profile Picture</label>
                         <input
                             type="text" 
@@ -201,7 +201,7 @@ const JoinForm = () =>{
                             placeholder="Place a direct link to your desired profile picture"
                         />
                     </div>
-                    <button type="submit" class="btn btn-info col mt-3" onClick="">Submit</button>
+                    <button type="submit" class="btn btn-info col-4 offset-6 mt-3" onClick="">Submit</button>
                 </form>            
             </div>
         </div>
