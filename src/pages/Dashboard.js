@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { teamData } from '../data/team';
 import '../App.css';
+import { Link } from 'react-router-dom'
 
 const DashboardPage = () => {
   let spotlight = teamData[Math.floor(Math.random()*teamData.length)];
@@ -22,17 +23,10 @@ const DashboardPage = () => {
               <div id="member">
                 <div className="col">
                   {/* {card start} */}
-                  <div class="card card border-primary">
-                    <img 
-                      className="th-img-container"
-                      src={spotlight.profile_img} 
-                      alt={spotlight.lastName} />
-                    <div class="card-body">
+                  <div class="card th-img-container border-primary">
+                  <Link to={`/member/${spotlight.id}`} className="card-link"><div className='th-card-bg-img' src={spotlight.profile_img} style={{'backgroundImage': `url(${spotlight.profile_img})`}}></div></Link>
+                    <div class="card-body text-center">
                       <h5 class="card-title text-primary">{spotlight.firstName} {spotlight.lastName}</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">{spotlight.position}</h6>
-                      <p class="card-text">{spotlight.bio}</p>
-                      <a href={spotlight.linkedIn} class="card-link text-info">Connect</a>
-                      <a href={spotlight.github} class="card-link text-info">Github</a>
                     </div>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ const MemberCard = ({member}) => {
                 <div className="d-flex justify-content-between my-3">
                   <Link to={`/member/${member.id}`} className="card-link">View Details</Link> <br />
                   
-                  <a href={member.linkedIn} className="card-link text-info" target='_blank'rel='noreferrer' >LinkedIn</a>
+                  <a href={member.linkedIn} className="card-link text-info" target='_blank'rel='noreferrer'>LinkedIn</a>
                 </div>
         
     </div>
