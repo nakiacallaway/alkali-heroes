@@ -59,7 +59,7 @@ const MemberPage = () => {
               </div>
 
             <div className='detail'>
-            <h5 className='text-secondary mt-4'>Contact:</h5>
+            <h5 className='mt-4'>Contact:</h5>
             <a href={member.linkedIn} className="card-link text-info" target='_blank'rel='noreferrer'>LinkedIn</a>
             <a href='mailto:{member.email}' className='card-link text-info' >Email</a>
             <a href={member.github} className='card-link text-info' target='_blank'rel='noreferrer'>Github Portfolio</a>
