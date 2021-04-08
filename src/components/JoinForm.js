@@ -3,30 +3,35 @@ import { teamData } from '../data/team';
 import '../App.css';
 
 const JoinForm = () =>{
-        const [alert, setAlert] = useState(false); //sets alert state
-        const [newMember, setNewMember] = useState({ // define a STATE here to keep track of input from the user
-            id:'',
-            firstName:'',
-            lastName:'',
-            email:'',
-            linkedIn:'',
-            github:'',
-            bio:'',
-            profile_img:'',
-            languages:[],             
-        });    
+    const [alert, setAlert] = useState(false); //sets alert state
+    const [newMember, setNewMember] = useState({ // define a STATE here to keep track of input from the user
+        firstName:'',
+        lastName:'',
+        email:'',
+        position:'',
+        linkedIn:'',
+        github:'',
+        bio:'',
+        profile_img:'',
+        languages:[],             
+    });    
 
+    console.log(newMember);
 
-        console.log(newMember);
+    const addMember = () => {
+        teamData.push({newMember, id: teamData.length});
+    }; //function to push member into array
 
     const handleSubmit = event => {
         event.preventDefault();
+
         console.log('submit runs!');
         setAlert(true);
         setTimeout(() => {
             setAlert(false);             
         }, 2000) 
-        // saveMovie();
+        addMember();
+        console.log(teamData);
     };
 
     return(
@@ -88,7 +93,8 @@ const JoinForm = () =>{
                         <select 
                             className="form-control" 
                             id="position" 
-                            onChange="">
+                            value={newMember.position}
+                            onChange={event => setNewMember(event.target.value)}>
                                 <option>React Apprentice</option>
                                 <option>React Lead</option>
                         </select>
@@ -98,55 +104,55 @@ const JoinForm = () =>{
                             <label htmlFor="skills">Languages</label>                        
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="html" value="option1"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="html" value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="html">HTML</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="css" value="option2"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="css"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="css">CSS</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="javascript" value="option3"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="javascript"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="javascript">Javascript</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="react" value="option1"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="react"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="react">React</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="react-native" value="option2"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="react-native"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="react-native">React-Native</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="nodejs" value="option3"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="nodejs"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="nodejs">NodeJS</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="java" value="option1"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="java"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="java">Java</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="python" value="option2"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="python"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="python">Python</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="mongodb" value="option3"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="mongodb"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="mongodb">MongoDB</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="c++" value="option2"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="c++"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="c++">C++</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="express" value="option3"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="express"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="espress">Express</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="oz" value="option2"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="oz"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="oz">Oz</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="languages" id="haskell" value="option3"/>
+                            <input class="form-check-input" type="checkbox" name="languages" id="haskell"  value={newMember.languages} onChange={event => setNewMember(event.target.checked)} />
                             <label class="form-check-label" for="haskell">Haskell</label>
                         </div>
                     </div>
@@ -185,7 +191,7 @@ const JoinForm = () =>{
                         </div>
                     </div>
                     <div id="image" className="form-group">
-                        <label htmlFor="profile_img"></label>
+                        <label htmlFor="profile_img">Profile Picture</label>
                         <input
                             type="text" 
                             id="profile_img" 
