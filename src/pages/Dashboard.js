@@ -23,7 +23,7 @@ const DashboardPage = () => {
               <div id="member">
                 <div className="col">
                   {/* {card start} */}
-                  <div class="card th-img-container border-primary">
+                  <div class="card th-img-container border-info">
                   <Link to={`/member/${spotlight.id}`} className="card-link"><div className='th-card-bg-img' src={spotlight.profile_img} style={{'backgroundImage': `url(${spotlight.profile_img})`}}></div></Link>
                     <div class="card-body text-center">
                       <h5 class="card-title text-primary">{spotlight.firstName} {spotlight.lastName}</h5>
