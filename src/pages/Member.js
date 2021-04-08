@@ -81,17 +81,24 @@ const MemberPage = () => {
     </div>
   </div>
 </div>
-<div className='row mt-5'>
-      {teamData.map((member, index) => {
-        return (
-          <div className='col-1'>
+<div className="my-4">
+  <div className="row small text-secondary">
+    Check out the rest of the team:
+  </div>
+  <div className='row'>
 
-          <JumpLinks member={member} />
+        {teamData.map((member, index) => {
+          return (
+            <div className='col-1'>
 
-          </div>
-        );
-        })}
-      </div>
+            <JumpLinks member={member} />
+
+            </div>
+          );
+          })}
+        </div>  
+</div>
+
         </div>
         
         
