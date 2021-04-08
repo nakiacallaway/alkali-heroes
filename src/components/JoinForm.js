@@ -36,7 +36,7 @@ const JoinForm = () =>{
 
     return(
         <div className="row my-5">
-            <div className="col col-md-10 offset-1">
+            <div className="col col-md-6 offset-3">
                 {/* //conditional for alert functionality */}
                 {  alert ? (
                     <div className="alert alert-success mb-5" role="alert"> 
